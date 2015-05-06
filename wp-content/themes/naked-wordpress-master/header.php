@@ -73,10 +73,10 @@
     <!-- right half -->
     <section id="rightSection" class="">
 
-        <div class="row top-half"><!-- <div class="vignette"></div> --></div>
 
-            <!-- <canvas id="myCanvas" height="300" width="300"></canvas> -->
-            <article class="row middle-section business-card">
+        <div class="row top-half"><!-- <div class="vignette"></div> -->
+
+        <article class="row business-card">
 
                 <header class="business-card-header columns small-12">
                     <h1>Mustafa Ishaq</h1>
@@ -96,10 +96,16 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); // Display the user-defined menu in Appearance > Menus ?>
                 </footer>
 
-            </article>
+        </article>
+
+
+        </div>
+
+            
+            
 
             <div class="row bottom-half"></div>
-
+        <!-- <canvas id="myCanvas" height="300" width="300"></canvas> -->
     </section>
     <!-- end right half -->
 

@@ -58,12 +58,14 @@ nav span{
   overflow: hidden;
 }
 
-.middle-section{
-  position: absolute;
-  top: 25%;
 
+.business-card{
+  position: absolute;
+  top: 0;
+  margin-bottom:0!important;
+  border: 0;
 }
-.middle-section *{
+.business-card *{
   border: 0px solid white;
   color: white;
   font-family: "Lato", Arial, sans-serif;
@@ -71,24 +73,28 @@ nav span{
   letter-spacing: 0.975rem;
 }
 
-.middle-section h1{
+.business-card h1{
   font-weight: 400;
 
 }
 
-.middle-section nav *{
+.business-card nav *{
   letter-spacing: 1px;
 }
 
-.middle-section h2,
-.middle-section h3{
+.business-card h2,
+.business-card h3{
   letter-spacing: 2px;
 
 }
 
-.middle-section header,
-.middle-section footer{
+.business-card header,
+.business-card footer{
   border: none;
+}
+
+.business-card footer{
+  padding:0;
 }
 
 
@@ -140,15 +146,25 @@ nav span{
 
 .top-half, .bottom-half{
   height: 50%;
-  width: 100%;
+
   /*overflow: hidden;*/
+  margin-bottom: 0!important;
+  max-width: 100%;
 }
 
+.top-half{
+  border-bottom: 1px solid white;
+}
 
+.bottom-half{
+  border-top: 1px solid white;
+}
 
 #fastener.is-loaded{
+/*  opacity: 0.95;*/
   transform: rotateZ(45deg);
   transition: transform 300ms ease 1500ms;
+
 }
 
 .logo {
@@ -156,13 +172,13 @@ nav span{
   width: 5em;
   height: 5em;
   margin: 2em auto;
-  background: #fff; }
-  @media (min-width: 1025px) {
-    .logo {
+  background: #fff;
+
       position: absolute;
       top: 50%;
       left: 50%;
-      margin: -2.5em 0 0 -2.5em; } }
+      margin: -2.5em 0 0 -2.5em;
+}
 
 .i-logo {
   position: absolute;
