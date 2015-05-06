@@ -1,2 +1,0 @@
-# moosecodes
-portfolio prototype
