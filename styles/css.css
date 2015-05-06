@@ -43,6 +43,8 @@ nav span{
   width:50%;
 
   overflow: hidden;
+
+  border-right: 1px solid white;
 }
 
 #rightSection{
@@ -56,6 +58,8 @@ nav span{
   width:50%;
 
   overflow: hidden;
+
+  border-left: 1px solid white;
 }
 
 
@@ -137,11 +141,11 @@ nav span{
 
 .left-image.is-loaded
 {
-  -webkit-transform: scaleX(1.15) scaleY(1.15);
-  -moz-transform: scaleX(1.15) scaleY(1.15);
-  -ms-transform: scaleX(1.15) scaleY(1.15);
-  -o-transform: scaleX(1.15) scaleY(1.15);
-  transform: scaleX(1.15) scaleY(1.15);
+  -webkit-transform: scaleX(1.20) scaleY(1.20);
+  -moz-transform: scaleX(1.20) scaleY(1.20);
+  -ms-transform: scaleX(1.20) scaleY(1.20);
+  -o-transform: scaleX(1.20) scaleY(1.20);
+  transform: scaleX(1.20) scaleY(1.20);
 }
 
 .top-half, .bottom-half{
@@ -150,6 +154,7 @@ nav span{
   /*overflow: hidden;*/
   margin-bottom: 0!important;
   max-width: 100%;
+
 }
 
 .top-half{
@@ -158,6 +163,10 @@ nav span{
 
 .bottom-half{
   border-top: 1px solid white;
+
+
+  background: url(../img/striped_overlay.png) repeat center 0;
+  
 }
 
 #fastener.is-loaded{
@@ -186,18 +195,30 @@ nav span{
   left: 50%;
   margin: -0.5815em 0 0 -0.8em;
   overflow: hidden;
+
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  -moz-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
   .is-loaded .i-logo {
+
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+  }
   .i-logo, .i-logo svg {
     width: 1.6em;
-    height: 1.163em; }
+    height: 1.163em;
+  }
 
 #logo-mask {
   fill: #fff; }

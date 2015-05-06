@@ -74,9 +74,9 @@
     <section id="rightSection" class="">
 
 
-        <div class="row top-half"><!-- <div class="vignette"></div> -->
+        <div class="row top-half">
 
-        <article class="row business-card">
+        <article class="business-card">
 
                 <header class="business-card-header columns small-12">
                     <h1>Mustafa Ishaq</h1>
@@ -98,7 +98,7 @@
 
         </article>
 
-
+        <!-- <div class="vignette"></div> -->
         </div>
 
             
