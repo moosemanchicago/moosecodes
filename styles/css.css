@@ -4,6 +4,10 @@
   padding:0;
 
 }
+footer, header{
+  margin:0!important;
+  padding:0!important;
+}
 html{
   background: black;
   width: 100%;
@@ -44,7 +48,7 @@ nav span{
 
   overflow: hidden;
 
-  border-right: 1px solid white;
+  border-right: 1px solid black;
 }
 
 #rightSection{
@@ -59,7 +63,7 @@ nav span{
 
   overflow: hidden;
 
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 
 
@@ -158,11 +162,11 @@ nav span{
 }
 
 .top-half{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .bottom-half{
-  border-top: 1px solid white;
+  border-top: 1px solid black;
 
 
   background: url(../img/striped_overlay.png) repeat center 0;
@@ -170,7 +174,8 @@ nav span{
 }
 
 #fastener.is-loaded{
-/*  opacity: 0.95;*/
+  border: 2px solid black;
+  /*  opacity: 0.95;*/
   transform: rotateZ(45deg);
   transition: transform 300ms ease 1500ms;
 
