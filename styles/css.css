@@ -60,7 +60,8 @@ nav span{
 
 .middle-section{
   position: absolute;
-  margin: 1.875rem auto 0 100px;
+  top: 25%;
+
 }
 .middle-section *{
   border: 0px solid white;
