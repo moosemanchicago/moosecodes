@@ -72,6 +72,9 @@ nav span{
   top: 0;
   margin-bottom:0!important;
   border: 0;
+
+  padding-left: 0.975rem;
+  padding-right: 0.975rem;
 }
 .business-card *{
   border: 0px solid white;
@@ -163,6 +166,7 @@ nav span{
 
 .top-half{
   border-bottom: 1px solid black;
+  padding: 0.975rem;
 }
 
 .bottom-half{

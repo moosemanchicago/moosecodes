@@ -113,7 +113,7 @@
     <!-- fastener sits on top -->
     <div id="fastener" class="logo">
         <div class="loader-bg" id="loader-bg"></div>
-        <i class="i i-logo">
+        <!-- <i class="i i-logo">
             <svg xmlns="http://www.w3.org/2000/svg" id="logo" version="1.1" x="0" y="0" width="44" height="32" viewBox="0 0 44 32" enable-background="new 0 0 44 32" xml:space="preserve">
                 <clipPath id="logo-clippath">
                     <rect x="1" y="1" width="42" height="30"></rect>
@@ -123,6 +123,6 @@
                     <path id="logo-mask" d="M0 0v32h44V0H0zM8 30c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6S11.3 30 8 30zM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6S11.3 14 8 14zM28 30h-8V2h8V30zM42 30h-8V2h8V30z">
                 </path>
             </svg>
-        </i>
+        </i> -->
     </div>
     <!-- end fastener -->
