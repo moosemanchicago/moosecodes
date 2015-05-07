@@ -9,7 +9,7 @@ footer, header{
   padding:0!important;
 }
 html{
-  background: black;
+  background: #191919;
   width: 100%;
   height: 100%;
 
@@ -38,7 +38,7 @@ nav span{
 
 
 #leftSection{
-  background: black;
+  background: #191919;
 
   position: absolute;
   left:0;
@@ -48,7 +48,7 @@ nav span{
 
   overflow: hidden;
 
-  border-right: 1px solid black;
+  border-right: 2px solid #191919;
 }
 
 #rightSection{
@@ -63,7 +63,7 @@ nav span{
 
   overflow: hidden;
 
-  border-left: 1px solid black;
+  border-left: 2px solid #191919;
 }
 
 
@@ -73,8 +73,8 @@ nav span{
   margin-bottom:0!important;
   border: 0;
 
-  padding-left: 0.975rem;
-  padding-right: 0.975rem;
+  padding-left: 1.975rem;
+  padding-right: 1.975rem;
 }
 .business-card *{
   border: 0px solid white;
@@ -155,6 +155,18 @@ nav span{
   transform: scaleX(1.20) scaleY(1.20);
 }
 
+
+.striped-overlay{
+  background: url(../img/striped_overlay.png) repeat center 0;
+
+  width: 100%;
+  height: 100%;
+  /* z-index: 100; */
+  position: absolute;
+  top: 0;
+  
+}
+
 .top-half, .bottom-half{
   height: 50%;
 
@@ -166,23 +178,24 @@ nav span{
 
 .top-half{
   border-bottom: 1px solid black;
-  padding: 0.975rem;
 }
 
 .bottom-half{
   border-top: 1px solid black;
 
 
-  background: url(../img/striped_overlay.png) repeat center 0;
+  /*background: url(../img/striped_overlay.png) repeat center 0;*/
   
 }
 
+
+
 #fastener.is-loaded{
-  border: 2px solid black;
+  border: 2px solid #191919;
   /*  opacity: 0.95;*/
   transform: rotateZ(45deg);
   transition: transform 300ms ease 1500ms;
-
+  /*box-shadow: 0 0 30px white, 0 0 30px white;*/
 }
 
 .logo {
@@ -190,12 +203,11 @@ nav span{
   width: 5em;
   height: 5em;
   margin: 2em auto;
-  background: #fff;
 
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -2.5em 0 0 -2.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2.5em 0 0 -2.5em;
 }
 
 .i-logo {
@@ -210,10 +222,10 @@ nav span{
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
 
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.0);
+  -moz-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.0);
+  -ms-transition: -webkit-transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.0);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.0);
 }
   
   .is-loaded .i-logo {
@@ -247,7 +259,8 @@ nav span{
   -webkit-transform: scaleX(25) scaleY(25);
       -ms-transform: scaleX(25) scaleY(25);
           transform: scaleX(25) scaleY(25);
-  background: #fff;
+
+
 }
   .is-loaded .loader-bg {
     -webkit-transform: scaleX(1) scaleY(1) !important;
