@@ -48,7 +48,7 @@ nav span{
 
   overflow: hidden;
 
-  border-right: 2px solid #191919;
+  border-right: 4px solid #191919;
 }
 
 #rightSection{
@@ -63,7 +63,7 @@ nav span{
 
   overflow: hidden;
 
-  border-left: 2px solid #191919;
+  border-left: 5px solid #191919;
 }
 
 
@@ -133,7 +133,9 @@ nav span{
   top:0;
   right: 0;
   /* z-index: -1;*/
-  background: url(../img/redfox.png) right no-repeat;
+  /*background: url(../img/redfox.png) right no-repeat;*/
+  /*background: url(../img/moose.jpeg) right no-repeat;*/
+  background: url(../img/moose2.jpg) right no-repeat;
   /*background: url(../img/chicago1.png) right no-repeat;*/
   /*background: url(../img/engine.jpg) right no-repeat;*/
   background-size: cover;
@@ -143,16 +145,16 @@ nav span{
   -o-transform: scaleX(1) scaleY(1);
   transform: scaleX(1) scaleY(1);
 
-  transition:transform 40s;
+  transition:transform 60s;
 }
 
 .left-image.is-loaded
 {
-  -webkit-transform: scaleX(1.20) scaleY(1.20);
-  -moz-transform: scaleX(1.20) scaleY(1.20);
-  -ms-transform: scaleX(1.20) scaleY(1.20);
-  -o-transform: scaleX(1.20) scaleY(1.20);
-  transform: scaleX(1.20) scaleY(1.20);
+  -webkit-transform: scaleX(1.25) scaleY(1.25);
+  -moz-transform: scaleX(1.25) scaleY(1.25);
+  -ms-transform: scaleX(1.25) scaleY(1.25);
+  -o-transform: scaleX(1.25) scaleY(1.25);
+  transform: scaleX(1.25) scaleY(1.25);
 }
 
 
@@ -177,11 +179,11 @@ nav span{
 }
 
 .top-half{
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
 .bottom-half{
-  border-top: 1px solid black;
+  border-top: 3px solid black;
 
 
   /*background: url(../img/striped_overlay.png) repeat center 0;*/
@@ -189,12 +191,16 @@ nav span{
 }
 
 
+#fastener{
+  border: 6px solid #191919;
+  transition: transform 300ms ease 1500ms;
+}
 
 #fastener.is-loaded{
-  border: 2px solid #191919;
   /*  opacity: 0.95;*/
   transform: rotateZ(45deg);
-  transition: transform 300ms ease 1500ms;
+  cursor: pointer;
+
   /*box-shadow: 0 0 30px white, 0 0 30px white;*/
 }
 
