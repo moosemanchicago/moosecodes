@@ -15,9 +15,14 @@ html{
 
 }
 body{
-  background: #bcbcbc;
-  width: 100%;
-  height: 100%;
+  background-color:#269;
+  background-image: linear-gradient(white 2px, transparent 2px),
+  linear-gradient(90deg, white 2px, transparent 2px),
+  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+ 
 }
 h1,h2,h3,h4,h5{
   text-transform: uppercase;
@@ -49,8 +54,13 @@ nav span{
   overflow: hidden;
 
   border-right: 4px solid #191919;
+
+  transition: transform 0.20s;
 }
 
+#leftSection.slideOut{
+    transform: translateX(-100%);
+}
 
 #rightSection{
 
@@ -64,10 +74,16 @@ nav span{
 
   border-left: 5px solid #191919;
 
-  transition:all .75s;
+/*  transition:all .75s;
   -webit-transition:all .75s;
   -moz-transition:all .75s;
-  -ms-transition:all .75s;
+  -ms-transition:all .75s;*/
+
+  transition: transform 0.20s;
+}
+
+#rightSection.slideOut{
+    transform: translateX(100%);
 }
 
 
@@ -100,12 +116,12 @@ nav span{
   border: 0px solid white;
   color: white;
   font-family: "Lato", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.975rem;
 }
 
 .business-card h1{
-  font-weight: 400;
+  font-weight: 700;
 
 }
 
@@ -155,7 +171,8 @@ nav span{
 
   margin:0;
 
-  background: url(../img/david.jpg) right no-repeat;
+  /*background: url(../img/keys.jpg) bottom no-repeat;*/
+  background: url(../img/david.jpg) -350px no-repeat;
   /*background: url(../img/pieta.jpg) center -200px no-repeat;*/
   /*background: url(../img/thinker_bw.jpg) right no-repeat;*/
   /*background: url(../img/redfox.png) right no-repeat;*/
@@ -330,31 +347,20 @@ nav span{
 
 #logo-mask {
   fill: #fff; }
-  @media (min-width: 1025px) {
-    #logo-mask {
-      fill: #fff; } }
+
 
 .logo-title {
-  display: none; }
-
-.loader-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scaleX(25) scaleY(25);
-      -ms-transform: scaleX(25) scaleY(25);
-          transform: scaleX(25) scaleY(25);
-
-
+  display: none;
 }
-  .is-loaded .loader-bg {
-  -webkit-transform: scaleX(1) scaleY(1) !important;
-  -ms-transform: scaleX(1) scaleY(1) !important;
-  transform: scaleX(1) scaleY(1) !important;
-  -webkit-transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
-  transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
+
+
+.is-loaded .loader-bg {
+-webkit-transform: scaleX(1) scaleY(1) !important;
+-ms-transform: scaleX(1) scaleY(1) !important;
+transform: scaleX(1) scaleY(1) !important;
+-webkit-transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
+transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
+
 }
 .loader-bg {
   position: absolute;
@@ -362,13 +368,16 @@ nav span{
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: scaleX(25) scaleY(25);
-  -ms-transform: scaleX(25) scaleY(25);
-  transform: scaleX(25) scaleY(25);
-  background: #fff;
+  -webkit-transform: scaleX(40) scaleY(40);
+  -ms-transform: scaleX(40) scaleY(40);
+  transform: scaleX(40) scaleY(40);
+  background: #191919;
+
 }
 
-
+.is-loaded .loader-bg:hover{
+  background: white;
+}
 
 #logo-fill-1 {
   fill: #ccc;
@@ -381,11 +390,6 @@ nav span{
             transform: translateY(0);
   }
 
-  @media (max-width: 1025px) {
-    #logo-fill-1 {
-      fill: #ccc !important; 
-    } 
-  }
 
 #logo-fill-2 {
   fill: #292929;
@@ -402,13 +406,6 @@ nav span{
     -webkit-transform: scaleY(1);
         -ms-transform: scaleY(1);
             transform: scaleY(1);
-  }
-
-
-  @media (max-width: 1025px) {
-    #logo-fill-2 {
-      fill: #292929 !important;
-    }
   }
 
 

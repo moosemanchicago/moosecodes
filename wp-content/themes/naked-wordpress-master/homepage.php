@@ -27,13 +27,13 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 
         <div class="row top-half">
 
-        <article class="business-card">
+        <article class="business-card columns small-12">
 
                 <header class="business-card-header columns small-12">
-                    <h1>Mustafa Raza Ishaq</h1>
+                    <h1>Mustafa Ishaq</h1>
                     <h6>Web Developer</h6>
                     <h6>Chicago , Illinois</h6>
-                    <h6>moose @ moosecodes . com</h6>
+                    <!-- <h6>moose @ moosecodes . com</h6> -->
                     <!-- <h3>312.810.2010</h3> -->
                 </header>
 
@@ -56,7 +56,7 @@ get_header(); // This fxn gets the header.php file and renders it ?>
             
 
             <div class="row bottom-half">
-            <div id="content" role="main" class="span8">
+            <div id="content" role="main" class="columns small-12">
 			<?php if ( have_posts() ) : 
 			// Do we have any posts/pages in the databse that match our query?
 			?>
