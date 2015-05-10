@@ -51,9 +51,8 @@ nav span{
   border-right: 4px solid #191919;
 }
 
+
 #rightSection{
-  background: rgba(178,52,70,1.0);
-  /*background: black;*/
 
   position: absolute;
   right:0;
@@ -64,8 +63,29 @@ nav span{
   overflow: hidden;
 
   border-left: 5px solid #191919;
+
+  transition:all .75s;
+  -webit-transition:all .75s;
+  -moz-transition:all .75s;
+  -ms-transition:all .75s;
 }
 
+
+#rightSection.mode1{
+  background: rgba(70,142,208,1.0) url(../img/striped_overlay.png) repeat center 0;
+}
+
+#rightSection.mode2{
+  background: rgba(178,52,70,1.0) url(../img/striped_overlay.png) repeat center 0;
+}
+
+#rightSection.mode3{
+  background: rgba(70,70,70,1.0) url(../img/striped_overlay.png) repeat center 0;
+}
+
+#rightSection.mode4{
+  background: rgba(65,200,80,1.0) url(../img/striped_overlay.png) repeat center 0;
+}
 
 .business-card{
   position: absolute;
@@ -133,19 +153,39 @@ nav span{
   top:0;
   right: 0;
   /* z-index: -1;*/
+  background: url(../img/david.jpg) -400px no-repeat;
+  /*background: url(../img/pieta.jpg) center -200px no-repeat;*/
+  /*background: url(../img/thinker_bw.jpg) right no-repeat;*/
   /*background: url(../img/redfox.png) right no-repeat;*/
   /*background: url(../img/moose.jpeg) right no-repeat;*/
-  background: url(../img/moose2.jpg) right no-repeat;
+  /*background: url(../img/moose2.jpg) right no-repeat;*/
   /*background: url(../img/chicago1.png) right no-repeat;*/
   /*background: url(../img/engine.jpg) right no-repeat;*/
+
   background-size: cover;
+
   -webkit-transform: scaleX(1) scaleY(1);
   -moz-transform: scaleX(1) scaleY(1);
   -ms-transform: scaleX(1) scaleY(1);
   -o-transform: scaleX(1) scaleY(1);
   transform: scaleX(1) scaleY(1);
 
-  transition:transform 60s;
+  transition:transform 40s;
+}
+
+.left-image.mode2{
+  background: url(../img/picaso2.jpg) left center no-repeat;
+  background-size: cover;
+}
+
+.left-image.mode3{
+  background: url(../img/redfox.png) right no-repeat;
+  background-size: cover;
+}
+
+.left-image.mode4{
+  background: url(../img/thinker_bw.jpg) right no-repeat;
+  background-size: cover;
 }
 
 .left-image.is-loaded
@@ -179,11 +219,11 @@ nav span{
 }
 
 .top-half{
-  border-bottom: 3px solid black;
+  /*border-bottom: 3px solid black;*/
 }
 
 .bottom-half{
-  border-top: 3px solid black;
+  /*border-top: 3px solid black;*/
 
 
   /*background: url(../img/striped_overlay.png) repeat center 0;*/
@@ -193,27 +233,66 @@ nav span{
 
 #fastener{
   border: 6px solid #191919;
+  
   transition: transform 300ms ease 1500ms;
+  -webkit-transition: transform 300ms ease 1500ms;
+  -moz-transition: transform 300ms ease 1500ms;
+  -ms-transition: transform 300ms ease 1500ms;
 }
 
 #fastener.is-loaded{
-  /*  opacity: 0.95;*/
-  transform: rotateZ(45deg);
   cursor: pointer;
 
-  /*box-shadow: 0 0 30px white, 0 0 30px white;*/
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
 }
+
+#fastener.mode1{
+/*  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  */
+}
+
+#fastener.mode2{
+/*  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);*/
+}
+
+#fastener.mode3{
+/*  transform: rotateZ(135deg);
+  -webkit-transform: rotateZ(135deg);
+  -moz-transform: rotateZ(135deg);
+  -ms-transform: rotateZ(135deg);*/
+}
+
+#fastener.mode4{
+/*  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);*/
+}
+
+#fastener.mode1{}
+#fastener.mode2{}
+#fastener.mode3{}
+#fastener.mode4{}
 
 .logo {
   z-index: 101;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   margin: 2em auto;
 
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -2.5em 0 0 -2.5em;
+  margin: -2.0em 0 0 -2.0em;
 }
 
 .i-logo {
