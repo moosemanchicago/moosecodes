@@ -152,8 +152,10 @@ nav span{
   height: 100%;
   top:0;
   right: 0;
-  /* z-index: -1;*/
-  background: url(../img/david.jpg) -400px no-repeat;
+
+  margin:0;
+
+  background: url(../img/david.jpg) right no-repeat;
   /*background: url(../img/pieta.jpg) center -200px no-repeat;*/
   /*background: url(../img/thinker_bw.jpg) right no-repeat;*/
   /*background: url(../img/redfox.png) right no-repeat;*/
@@ -170,7 +172,7 @@ nav span{
   -o-transform: scaleX(1) scaleY(1);
   transform: scaleX(1) scaleY(1);
 
-  transition:transform 40s;
+  transition:transform 45s;
 }
 
 .left-image.mode2{
@@ -348,26 +350,25 @@ nav span{
 
 }
   .is-loaded .loader-bg {
-    -webkit-transform: scaleX(1) scaleY(1) !important;
-        -ms-transform: scaleX(1) scaleY(1) !important;
-            transform: scaleX(1) scaleY(1) !important;
-    -webkit-transition: all 1s 0.1s cubic-bezier(0.485, 0.615, 0, 1);
-            transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
-  }
-  @media (max-width: 1025px) {
-    .loader-bg {
-      -webkit-transform: scaleX(25) scaleY(25) !important;
-          -ms-transform: scaleX(25) scaleY(25) !important;
-              transform: scaleX(25) scaleY(25) !important;
-    }
-      .is-loaded .loader-bg {
-        -webkit-transform: scaleX(1) scaleY(1) !important;
-            -ms-transform: scaleX(1) scaleY(1) !important;
-                transform: scaleX(1) scaleY(1) !important;
-        -webkit-transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
-                transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1); 
-      }
-  }
+  -webkit-transform: scaleX(1) scaleY(1) !important;
+  -ms-transform: scaleX(1) scaleY(1) !important;
+  transform: scaleX(1) scaleY(1) !important;
+  -webkit-transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
+  transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
+}
+.loader-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(25) scaleY(25);
+  -ms-transform: scaleX(25) scaleY(25);
+  transform: scaleX(25) scaleY(25);
+  background: #fff;
+}
+
+
 
 #logo-fill-1 {
   fill: #ccc;
