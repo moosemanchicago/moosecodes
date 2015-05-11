@@ -125,7 +125,7 @@ nav span{
 }
 #controls{
   position: absolute;
-  bottom: 50%;
+  bottom: 48%;
 }
 
 #controls a{
@@ -238,21 +238,21 @@ nav span{
   -o-transform: scaleX(1) scaleY(1);
   transform: scaleX(1) scaleY(1);
 
-  transition:transform 45s;
+  transition:transform 90s;
 }
 
 .left-image.mode2{
-  background: url(../img/david.jpg) left center no-repeat;
+  background: url(../img/david.jpg) -200px no-repeat;
   background-size: cover;
 }
 
 .left-image.mode3{
-  background: url(../img/picaso2.jpg) right no-repeat;
+  background: url(../img/picaso2.jpg) center no-repeat;
   background-size: cover;
 }
 
 .left-image.mode4{
-  background: url(../img/moose2.jpg) right no-repeat;
+  background: url(../img/moose2.jpg) center no-repeat;
   background-size: cover;
 }
 
