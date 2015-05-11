@@ -8,13 +8,10 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 
     <!-- left half -->
 	<section id="leftSection" class="leftSide">
-
-        <div class="row top-half">
-            <figure id="left-image" class="columns small-12 left-image"></figure>
-            <div class="striped-overlay"></div>
-            <!-- <div class="vignette"></div> -->
-        </div>
-
+        <figure id="left-image" class="columns small-12 left-image"></figure>
+        <figure class="striped-overlay"></figure>
+        <!-- <div class="vignette"></div> -->
+        <div class="row top-half"></div>
         <div class="row bottom-half"></div>
         
     </section>
@@ -23,20 +20,18 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 
     <!-- right half -->
     <section id="rightSection" class="mode1">
-
-
+        <figure class="striped-overlay"></figure>
         <div class="row top-half">
 
-        <article class="business-card columns small-12">
-
+            <article class="business-card columns small-12">
                 <header class="business-card-header columns small-12">
-                    <h1>Mustafa Ishaq</h1>
+                    <h1>Mustafa Raza Ishaq</h1>
                     <h6>Web Developer</h6>
                     <h6>Chicago , Illinois</h6>
                     <!-- <h6>moose @ moosecodes . com</h6> -->
                     <!-- <h3>312.810.2010</h3> -->
                 </header>
-
+    
                 <footer class="business-card-footer columns small-12">
                     <!-- <nav>
                         <span class="columns small-4"><a href="">Work</a></span>
@@ -46,16 +41,23 @@ get_header(); // This fxn gets the header.php file and renders it ?>
                     </nav> -->
                     <?php //wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); // Display the user-defined menu in Appearance > Menus ?>
                 </footer>
-
-        </article>
-
-        <!-- <div class="vignette"></div> -->
+    
+            </article>
+            <div id="controls" class="columns small-12">
+                    <a href="#" class="leftSectionToggle0 columns small-3">&nbsp;</a>
+                    <a href="#" class="leftSectionToggle1 columns small-3">portfolio</a>
+                    <a href="#" class="leftSectionToggle2 columns small-3">curriculum vitae</a>
+                    <a href="#" class="leftSectionToggle3 columns small-3">contact</a>
+                </div>
+            
+            <!-- <div class="vignette"></div> -->
+        
         </div>
-
             
             
 
-            <div class="row bottom-half">
+        <div class="row bottom-half">
+            
             <div id="content" role="main" class="columns small-12">
 			<?php if ( have_posts() ) : 
 			// Do we have any posts/pages in the databse that match our query?
@@ -68,9 +70,9 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 					<article class="post">
 
 						<?php if (!is_front_page()) : // Only if this page is NOT being used as a home page, display the title ?>
-							<h1 class='title'>
+							<span class='title'>
 								<?php the_title(); // Display the page title ?>
-							</h1>
+							</span>
 						<?php endif; ?>
 										
 						<div class="the-content">

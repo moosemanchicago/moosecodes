@@ -40,11 +40,20 @@
         }());
 
       $(document).foundation();
-      $('#fastener').click(function(){console.log(this);
+      $('#fastener').click(function(){
              if( $('#rightSection').hasClass("mode1") ){ $('#rightSection, #left-image').removeClass("mode1").addClass("mode2"); $('#fastener').removeClass("mode1").addClass("mode2");}
         else if( $('#rightSection').hasClass("mode2") ){ $('#rightSection, #left-image').removeClass("mode2").addClass("mode3"); $('#fastener').removeClass("mode2").addClass("mode3");}
         else if( $('#rightSection').hasClass("mode3") ){ $('#rightSection, #left-image').removeClass("mode3").addClass("mode4"); $('#fastener').removeClass("mode3").addClass("mode4");}
         else if( $('#rightSection').hasClass("mode4") ){ $('#rightSection, #left-image').removeClass("mode4").addClass("mode1"); $('#fastener').removeClass("mode4").addClass("mode1");}
+      });
+      $('.leftSectionToggle1').click(function(){
+          $('#leftSection').toggleClass('tuckUnder');
+      });
+      $('.leftSectionToggle2').click(function(){
+          $('#leftSection').toggleClass('slideUp');
+      });
+      $('.leftSectionToggle3').click(function(){
+          $('#leftSection').toggleClass('slideDown');
       });
     </script>
 <?php endif; ?>

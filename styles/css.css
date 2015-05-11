@@ -25,6 +25,7 @@ body{
  
 }
 h1,h2,h3,h4,h5{
+  color: white;
   text-transform: uppercase;
 }
 
@@ -58,8 +59,17 @@ nav span{
   transition: transform 0.20s;
 }
 
-#leftSection.slideOut{
+#leftSection.slideLeft{
     transform: translateX(-100%);
+}
+#leftSection.tuckUnder{
+    transform: translateX(90%);
+}
+#leftSection.slideUp{
+    transform: translateY(-100%);
+}
+#leftSection.slideDown{
+    transform: translateY(100%);
 }
 
 #rightSection{
@@ -82,37 +92,58 @@ nav span{
   transition: transform 0.20s;
 }
 
-#rightSection.slideOut{
+#rightSection.slideRight{
     transform: translateX(100%);
+}
+#rightSection.slideUp{
+    transform: translateY(-100%);
+}
+#rightSection.slideDown{
+    transform: translateY(100%);
 }
 
 
 #rightSection.mode1{
-  background: rgba(70,142,208,1.0) url(../img/striped_overlay.png) repeat center 0;
+  background: rgb(70,142,208);
 }
 
 #rightSection.mode2{
-  background: rgba(178,52,70,1.0) url(../img/striped_overlay.png) repeat center 0;
+  background: rgb(178,52,70);
 }
 
 #rightSection.mode3{
-  background: rgba(70,70,70,1.0) url(../img/striped_overlay.png) repeat center 0;
+  background: rgb(70,142,208);
 }
 
 #rightSection.mode4{
-  background: rgba(65,200,80,1.0) url(../img/striped_overlay.png) repeat center 0;
+  background: rgb(178,52,70);
 }
 
 .business-card{
-  position: absolute;
-  top: 0;
-  margin-bottom:0!important;
-  border: 0;
 
-  padding-left: 1.975rem;
-  padding-right: 1.975rem;
 }
-.business-card *{
+#controls{
+  position: absolute;
+  bottom: 50%;
+}
+
+#controls a{
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+
+}
+#controls a:first-child{
+  border: none;
+
+}
+
+#content{
+  position: absolute;
+  bottom: 0;
+}
+
+.business-card *, #content{
   border: 0px solid white;
   color: white;
   font-family: "Lato", Arial, sans-serif;
@@ -222,9 +253,10 @@ nav span{
 
   width: 100%;
   height: 100%;
-  /* z-index: 100; */
   position: absolute;
   top: 0;
+
+  margin:0;
   
 }
 
@@ -371,12 +403,12 @@ transition: all 1s 0.1s cubic-bezier(0.485, 0.605, 0, 1);
   -webkit-transform: scaleX(40) scaleY(40);
   -ms-transform: scaleX(40) scaleY(40);
   transform: scaleX(40) scaleY(40);
-  background: #191919;
+  background: white;
 
 }
 
 .is-loaded .loader-bg:hover{
-  background: white;
+  /*background: white;*/
 }
 
 #logo-fill-1 {
