@@ -7,7 +7,7 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 	
 
     <!-- left half -->
-	<section id="leftSection" class="leftSide">
+	<section id="leftSection" class="leftSide show-for-medium-up hide-for-xlarge-up">
         <figure id="left-image" class="columns small-12 left-image"></figure>
         <figure class="striped-overlay"></figure>
         <!-- <div class="vignette"></div> -->
@@ -19,13 +19,13 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 
 
     <!-- right half -->
-    <section id="rightSection" class="mode1">
+    <section id="rightSection" class="mode1 show-for-medium-up hide-for-xlarge-up">
         <figure class="striped-overlay"></figure>
         <div class="row top-half">
 
             <article class="business-card columns small-12">
                 <header class="business-card-header columns small-12">
-                    <h1>Mustafa Raza Ishaq</h1>
+                    <h1>Mustafa Raza</h1>
                     <h6>Web Developer</h6>
                     <h6>Chicago , Illinois</h6>
                     <!-- <h6>moose @ moosecodes . com</h6> -->
@@ -45,9 +45,9 @@ get_header(); // This fxn gets the header.php file and renders it ?>
             </article>
             <div id="controls" class="columns small-12">
                     <a href="#" class="leftSectionToggle0 columns small-3">&nbsp;</a>
-                    <a href="#" class="leftSectionToggle1 columns small-3">portfolio</a>
-                    <a href="#" class="leftSectionToggle2 columns small-3">curriculum vitae</a>
-                    <a href="#" class="leftSectionToggle3 columns small-3">contact</a>
+                    <a href="#" class="portfolioToggle columns small-3">portfolio</a>
+                    <a href="#" class="resumeToggle columns small-3">resume</a>
+                    <a href="#" class="contactToggle columns small-3">contact</a>
                 </div>
             
             <!-- <div class="vignette"></div> -->

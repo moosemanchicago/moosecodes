@@ -46,13 +46,16 @@
         else if( $('#rightSection').hasClass("mode3") ){ $('#rightSection, #left-image').removeClass("mode3").addClass("mode4"); $('#fastener').removeClass("mode3").addClass("mode4");}
         else if( $('#rightSection').hasClass("mode4") ){ $('#rightSection, #left-image').removeClass("mode4").addClass("mode1"); $('#fastener').removeClass("mode4").addClass("mode1");}
       });
-      $('.leftSectionToggle1').click(function(){
+      $('.portfolioToggle').click(function(){
+          $('.portfolioToggle').toggleClass('active');
           $('#leftSection').toggleClass('tuckUnder');
       });
-      $('.leftSectionToggle2').click(function(){
+      $('.resumeToggle').click(function(){
+          $('.resumeToggle').toggleClass('active');
           $('#leftSection').toggleClass('slideUp');
       });
-      $('.leftSectionToggle3').click(function(){
+      $('.contactToggle').click(function(){
+          $('.contactToggle').toggleClass('active');
           $('#leftSection').toggleClass('slideDown');
       });
     </script>

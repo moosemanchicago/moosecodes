@@ -56,14 +56,15 @@ nav span{
 
   border-right: 4px solid #191919;
 
-  transition: transform 0.20s;
+  transition: transform .25s ease-out;
 }
 
 #leftSection.slideLeft{
     transform: translateX(-100%);
+
 }
 #leftSection.tuckUnder{
-    transform: translateX(90%);
+    transform: translateX(100%);
 }
 #leftSection.slideUp{
     transform: translateY(-100%);
@@ -104,19 +105,19 @@ nav span{
 
 
 #rightSection.mode1{
-  background: rgb(70,142,208);
+  background: rgb(178,52,70);
 }
 
 #rightSection.mode2{
-  background: rgb(178,52,70);
-}
-
-#rightSection.mode3{
   background: rgb(70,142,208);
 }
 
+#rightSection.mode3{
+  background: rgb(70, 208, 136);
+}
+
 #rightSection.mode4{
-  background: rgb(178,52,70);
+  background: rgb(223, 175, 131);
 }
 
 .business-card{
@@ -130,12 +131,29 @@ nav span{
 #controls a{
   color: white;
   text-align: center;
-  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  padding-bottom: 2px;
+
+  border: 4px solid transparent;
+  transition:all .4s;
 
 }
-#controls a:first-child{
-  border: none;
+#controls a:first-child:hover{
+  border: 4px solid transparent;
+  cursor: default;
+}
 
+#controls a:hover{
+
+  border: 4px solid white;
+  /*border-top: 4px solid white;
+  border-bottom: 4px solid white;*/
+
+}
+
+#controls a.active{
+    background: white;
+    color: black;
 }
 
 #content{
@@ -203,9 +221,9 @@ nav span{
   margin:0;
 
   /*background: url(../img/keys.jpg) bottom no-repeat;*/
-  background: url(../img/david.jpg) -350px no-repeat;
+  /*background: url(../img/david.jpg) -350px no-repeat;*/
   /*background: url(../img/pieta.jpg) center -200px no-repeat;*/
-  /*background: url(../img/thinker_bw.jpg) right no-repeat;*/
+  background: url(../img/thinker_bw.jpg) right no-repeat;
   /*background: url(../img/redfox.png) right no-repeat;*/
   /*background: url(../img/moose.jpeg) right no-repeat;*/
   /*background: url(../img/moose2.jpg) right no-repeat;*/
@@ -224,17 +242,17 @@ nav span{
 }
 
 .left-image.mode2{
-  background: url(../img/picaso2.jpg) left center no-repeat;
+  background: url(../img/david.jpg) left center no-repeat;
   background-size: cover;
 }
 
 .left-image.mode3{
-  background: url(../img/redfox.png) right no-repeat;
+  background: url(../img/picaso2.jpg) right no-repeat;
   background-size: cover;
 }
 
 .left-image.mode4{
-  background: url(../img/thinker_bw.jpg) right no-repeat;
+  background: url(../img/moose2.jpg) right no-repeat;
   background-size: cover;
 }
 
